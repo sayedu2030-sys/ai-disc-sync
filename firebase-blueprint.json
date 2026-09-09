@@ -1,0 +1,40 @@
+{
+  "entities": {
+    "Participant": {
+      "title": "Participant",
+      "description": "DISC Assessment participant and submitted diagnosis result",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "initial": { "type": "string" },
+        "name": { "type": "string" },
+        "maskedName": { "type": "string" },
+        "department": { "type": "string" },
+        "role": { "type": "string" },
+        "primaryType": { "type": "string", "enum": ["D", "I", "S", "C"] },
+        "primaryTypeName": { "type": "string" },
+        "secondaryType": { "type": "string", "enum": ["D", "I", "S", "C"] },
+        "secondaryTypeName": { "type": "string" },
+        "submittedAt": { "type": "string" },
+        "manualStatus": { "type": "string" },
+        "scores": {
+          "type": "object",
+          "properties": {
+            "D": { "type": "number" },
+            "I": { "type": "number" },
+            "S": { "type": "number" },
+            "C": { "type": "number" }
+          },
+          "required": ["D", "I", "S", "C"]
+        }
+      },
+      "required": ["id", "name", "primaryType", "scores"]
+    }
+  },
+  "firestore": {
+    "/participants/{participantId}": {
+      "entity": "Participant",
+      "description": "Submitted DISC participant records"
+    }
+  }
+}

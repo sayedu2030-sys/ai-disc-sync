@@ -1,0 +1,10 @@
+{
+  "name": "DISC Sync",
+  "description": "DISC 행동유형 진단 및 실시간 관제 대시보드, 소통 매뉴얼, 비즈니스 에티켓 가이드",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
