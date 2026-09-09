@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #f8f9ff;
+  --color-surface-dim: #cbdbf5;
+  --color-surface-bright: #f8f9ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #eff4ff;
+  --color-surface-container: #e5eeff;
+  --color-surface-container-high: #dce9ff;
+  --color-surface-container-highest: #d3e4fe;
+  --color-on-surface: #0b1c30;
+  --color-on-surface-variant: #45464e;
+  --color-inverse-surface: #213145;
+  --color-inverse-on-surface: #eaf1ff;
+  --color-outline: #75777f;
+  --color-outline-variant: #c5c6cf;
+  --color-surface-tint: #4f5e83;
+  --color-primary: #000922;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #0f2042;
+  --color-on-primary-container: #7988b0;
+  --color-inverse-primary: #b6c6f1;
+  --color-secondary: #008080;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #006666;
+  --color-on-secondary-container: #fefcff;
+  --color-tertiary: #000c16;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #002437;
+  --color-on-tertiary-container: #0091cf;
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  --color-primary-fixed: #d9e2ff;
+  --color-primary-fixed-dim: #b6c6f1;
+  --color-on-primary-fixed: #081a3c;
+  --color-on-primary-fixed-variant: #37466a;
+  --color-secondary-fixed: #dbe1ff;
+  --color-secondary-fixed-dim: #b4c5ff;
+  --color-on-secondary-fixed: #00174b;
+  --color-on-secondary-fixed-variant: #003ea8;
+  --color-tertiary-fixed: #c9e6ff;
+  --color-tertiary-fixed-dim: #89ceff;
+  --color-on-tertiary-fixed: #001e2f;
+  --color-on-tertiary-fixed-variant: #004c6e;
+  --color-background: #f8f9ff;
+  --color-on-background: #0b1c30;
+  --color-surface-variant: #d3e4fe;
+
+  --spacing-space-2xs: 0.25rem;
+  --spacing-space-xs: 0.5rem;
+  --spacing-space-sm: 0.75rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xl: 2rem;
+  --spacing-space-2xl: 3rem;
+  --spacing-space-3xl: 4rem;
+  --spacing-margin-desktop: 2rem;
+  --spacing-margin-mobile: 1rem;
+}
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
